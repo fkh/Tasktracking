@@ -4,10 +4,11 @@
 # http://monkinetic.com/2011/02/08/wiring-notational-velocity-to-a-github-wiki.html
  
 my $USER='fkh';
-my $status= `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /usr/local/git/bin/git status`;
+my $todos='to\ do.rtf';
+my $status= `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /usr/local/git/bin/git status $todos`;
 
 if ($status =~ /modified|untracked\ files\ present|deleted/) {
-    my $out = `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /usr/local/git/bin/git add .; /usr/local/git/bin/git commit -a -m "task update";`;
+    my $out = `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /usr/local/git/bin/git commit $todos -m "task update";`;
 				} else {
 				    print "No NV updates commited to git.\n"
 						}

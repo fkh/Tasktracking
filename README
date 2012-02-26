@@ -5,5 +5,9 @@ http://monkinetic.com/2011/02/08/wiring-notational-velocity-to-a-github-wiki.htm
 
 But the launchctl approach wasn't working, so I went with cron instead 0,22,30 * * * * perl /Users/fkh/tasktracking/taskstogit 
 
-git-loc details:
-http://brokestream.com/git-loc.html
+I also decided that I only want to track my todo list, not all other files.
+
+To run stats:
+~/tasktracking/gitstats/gitstats/gitstats ~/Library/Application\ Support/Notational\ Data/ ~/tasktracking/stats/
+
+
