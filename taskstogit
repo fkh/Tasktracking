@@ -9,5 +9,5 @@ my $status= `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /
 if ($status =~ /modified|untracked\ files\ present|deleted/) {
     my $out = `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /usr/local/git/bin/git add .; /usr/local/git/bin/git commit -a -m "task update";`;
 				} else {
-				    print "NV Wiki Update: No update needed.\n"
+				    print "No NV updates commited to git.\n"
 						}
