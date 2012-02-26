@@ -2,3 +2,8 @@ Writing my Notational Velocity folder to a git repo.
 
 Heavily based on:
 http://monkinetic.com/2011/02/08/wiring-notational-velocity-to-a-github-wiki.html
+
+But the launchctl approach wasn't working, so I went with cron instead 0,22,30 * * * * perl /Users/fkh/tasktracking/taskstogit 
+
+git-loc details:
+http://brokestream.com/git-loc.html
