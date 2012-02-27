@@ -7,6 +7,8 @@ But the launchctl approach wasn't working, so I went with cron instead 0,22,30 *
 
 I also decided that I only want to track my todo list, not all other files.
 
+Stats via gitstats (http://gitstats.sourceforge.net/).
+
 To run stats:
 ~/tasktracking/gitstats/gitstats/gitstats ~/Library/Application\ Support/Notational\ Data/ ~/tasktracking/stats/
 
