@@ -10,7 +10,7 @@ my $status= `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /
 if ($status =~ /modified|untracked\ files\ present|deleted/) {
     my $out = `cd /Users/$USER/Library/Application\\ Support/Notational\\ Data/; /usr/local/git/bin/git commit $todos -m "task update";`;
 				} else {
-				    print "No NV updates commited to git.\n"
+				    #print "No NV updates commited to git.\n"
 						}
 
-my $report = `/Users/fkh/tasktracking/gitstats/gitstats/gitstats /Users/fkh/Library/Application\\ Support/Notational\\ Data/ /Users/fkh/tasktracking/stats`;
+#my $report = `/Users/fkh/tasktracking/gitstats/gitstats/gitstats /Users/fkh/Library/Application\\ Support/Notational\\ Data/ /Users/fkh/tasktracking/stats`;
